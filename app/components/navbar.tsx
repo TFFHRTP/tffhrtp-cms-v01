@@ -39,23 +39,6 @@ export const NavBar = ({
                 <Link href="/">
                     <h1 className="text-2xl text-white font-semibold">{blogInfo.name}</h1>
                 </Link>
-
-
-                {/* This part can be removed if not needed */}
-                <div className="hidden md:block">
-                    <div className="flex items-center h-full">
-                        {pages.map((page) => (
-                            <Link
-                                href={`/page/${page.slug}`}
-                                key={page.slug}
-                                className="text-white text-sm ml-4"
-                            >
-                                {page.title.rendered}
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-
                 <div className="md:hidden flex">
                     <button
                         onClick={toggleNavbar}
