@@ -24,5 +24,3 @@ export default async function BlogPage({ params }: { params: { slug: string } })
       
     );
 };
-
-export {};
