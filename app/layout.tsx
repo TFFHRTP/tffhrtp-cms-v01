@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ['latin'] })
 const wordpressUrl = process.env.WORDPRESS_URL;
 
 export const metadata: Metadata = {
-  title: 'Azure Static Web Apps + WordPress',
-  description: 'A custom Next.js starter template for Azure Static Web Apps + WordPress',
+  title: 'The Foundation for Human Rights through Photography',
+  description: 'Advocate. Document. Promote. | Human Rights.',
 }
 
 export default async function RootLayout({
@@ -34,10 +34,7 @@ export default async function RootLayout({
         <footer className="bg-indigo-950 text-white p-4 text-sm min-h-full h-32 flex items-center justify-center">
           {/* Footer content goes here */}
           <div>
-            {blogInfo.name} &copy; {new Date().getFullYear()}
-          </div>
-          <div>
-            {blogInfo.description}
+            The Foundation for Human Rights through Photography &copy; 2023-{new Date().getFullYear()} is licensed under CC BY-SA 4.0 
           </div>
         </footer>
       </body>
